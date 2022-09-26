@@ -61,15 +61,14 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    {/* #2-3-2 */}
-    <RecoilRoot>
-      {/* #2-1-3 */}
-      <ThemeProvider theme={darkTheme}>
-        {/* #2-2 */}
-        <GlobalStyle />
-        <App />
-      </ThemeProvider>
-    </RecoilRoot>
-  </React.StrictMode>
+  // #3-1-2
+  // #2-3-2
+  <RecoilRoot>
+    {/* #2-1-3 */}
+    <ThemeProvider theme={darkTheme}>
+      {/* #2-2 */}
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </RecoilRoot>
 );
